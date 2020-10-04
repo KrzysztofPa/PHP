@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, grey, #4c4cb8);
+    min-height: 100vh;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+h2 {
+    margin: 0;
+    padding: 2em;
+
+}
+
+.container {
+    margin: 1em;
+    background-color: #acacb8;
+    border: 2px solid black;
+    position: relative;
+}
+
+.parzysta {
+    color: #700808;
+}
+
+.nieparzysta {
+    color: green;
+}
+
+.square {
+    background-color: rgba(0, 0, 0, 0);
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    margin: auto;
+    position: relative;
+
+}
+
+.topText {
+    font-size: 1em;
+    position: absolute;
+    top: -2em;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.leftText {
+    font-size: 1em;
+    left: -2em;
+    position: absolute;
+    transform: rotate(-90deg) translateX(30%);
+    top: 50%;
+}
+
+.center {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    top: 50%;
+}
+
+table {
+    margin: auto;
+    border-spacing: 0px;
+}
+
+td {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 0;
+}
+
+caption {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 2em 5em;
+}
+
+li {
+    margin: 0;
+}
+
+li:nth-child(even) {
+    background-color: #8fd4ff;
+}
+
+li:nth-child(odd) {
+    background-color: #b1dffc;
+}
+
+a {
+    text-decoration: none;
+}

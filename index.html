@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Losowe zadania z PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="content">
+            <form class="form1" action="losowe.php" method="post">
+                <h2 class="formHeading">1.Losowanie podanej liczby zakres(0-100)</h2>
+                <input class="randInput" type="text" name="num_1" placeholder="Wpisz liczbę" value="">
+                <button class="randBtn" type="submit" name="button">Losuj</button>
+            </form>
+
+            <form class="form2" action="prostokat.php" method="post">
+                <h2 class="formHeading">2.Rysowanie prostokąta</h2>
+                <input type="text" name="height" placeholder="Wysokość" required value="">
+                <input type="text" name="width" placeholder="Szerokość" required value="">
+                <input type="color" class="colorInput" name="color" value="">
+                <button type="submit" class="randBtn" name="button">Prostokąt</button>
+            </form>
+
+            <form class="form3" action="wizytowka.php" method="post">
+                <h2 class="formHeading">3.Wizytówka</h2>
+                <input type="text" name="name" placeholder="Imię" value="">
+                <input type="text" name="surname" placeholder="Nazwisko" value="">
+                <select class="" name="charSelect">
+                    <option value="*">*</option>
+                    <option value="+">+</option>
+                    <option value="@">@</option>
+                    <option value="#">#</option>
+                </select>
+                <button type="submit" class="randBtn" name="button">Generuj</button>
+            </form>
+
+            <form class="form4" action="zerowe.php" method="post">
+                <h2 class="formHeading">4.Liczenie miejsc zerowych</h2>
+                <input type="text" name="a" placeholder="a" value="">x<sup>2</sup>+
+                <input type="text" name="b" placeholder="b" value="">x+
+                <input type="text" name="c" placeholder="c" value="">
+                <button type="submit" class="randBtn" name="button">Licz</button>
+            </form>
+
+            <form class="form5" action="tabela.php" method="post">
+                <h2 class="formHeading">5.Tworzenie tabelki</h2>
+                <input type="text" name="rows" placeholder="Liczba wierszy" value="">
+                <input type="text" name="columns" placeholder="Liczba kolumn" value="">
+                <input type="text" name="title" placeholder="Tytuł tabeli" value="">
+                <button type="submit" class="randBtn" name="button">Generuj</button>
+            </form>
+
+            <form class="form6" action="linki.php" method="post">
+                <h2 class="formHeading">6.Linki - rozdzielaj po ;</h2>
+                <input type="text" name="link" value="">
+                <button type="submit" class="randBtn" name="button">Generuj</button>
+            </form>
+    </div>
+</body>
+
+</html>
